@@ -312,7 +312,7 @@ html{
     grid-area: footer;
 }
 
-@media (min-width:400px){
+@media (min-width:320px){
     /* empieza index */
     
     .grid{
