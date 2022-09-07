@@ -188,7 +188,7 @@ html{
 
 /* Empieza botones */
 
-
+/* Empieza botones */
 
 .btn{
     background-color: pink;
@@ -196,7 +196,7 @@ html{
     color: white;
     padding: 15px;
     font-size: 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btn__form{
@@ -204,7 +204,7 @@ html{
     border: none;
     padding: 5px;
     margin: 10px 0px 0px 0px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btn:hover{
@@ -236,7 +236,7 @@ html{
     padding: 20px;
     border-radius:50px;
     font-size: 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btncenter-greeen:hover{
@@ -314,7 +314,7 @@ html{
 
 @media (min-width:400px){
     /* empieza index */
-    
+
     .grid{
         grid-template-columns: 1, 100%;
         grid-template-rows: auto;
