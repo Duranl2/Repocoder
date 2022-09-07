@@ -188,6 +188,9 @@ html{
 
 /* Empieza botones */
 
+/* Empieza botones */
+
+
 .btn{
     background-color: pink;
     border: none;
@@ -316,7 +319,7 @@ html{
 
 @media (min-width:320px){
     /* empieza index */
-    
+
     .grid{
         grid-template-columns: 1, 100%;
         grid-template-rows: auto;
