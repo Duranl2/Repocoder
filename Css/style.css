@@ -20,7 +20,11 @@ html{
     height: auto;
     background-color: rgb(234,143,119,0.7);
 }
-    
+
+.bg-skin{
+    background-color: rgb(234,143,119,0.7);
+}
+
 .nav__lista{
     list-style: none;
     display: inline-block;
@@ -33,6 +37,7 @@ html{
 }
 
 .nav__items--color{
+    margin: 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,9 +62,15 @@ html{
     background-attachment:inherit;
 }
 
+.carousel{
+    width: 100%; 
+    height: auto;
+    margin: 0px 0px 10px 0px;
+}
+
 .body{
     display: flex;
-    height: 100vh;
+    height: 70vh;
 }
 
 .header__titulo{
@@ -86,6 +97,7 @@ html{
     line-height: 2.2rem;
     font-weight: 400;
     align-items: center;
+    justify-content: center;
 }
 
 .main__tittle{
@@ -101,6 +113,10 @@ html{
     display: flex;
     flex-direction:column;
     justify-content: center;
+}
+
+.bg-pink{
+    color: pink;
 }
 
 .main__subtexto--md{
@@ -155,6 +171,14 @@ html{
     display: inline-block;
 }
 
+.main__view{
+    overflow: hidden;
+}
+
+.card-space{
+    padding: 5px;
+}
+
 .main__cardimg--md{  
     padding: 20px 0px;
     display: flex;
@@ -186,6 +210,13 @@ html{
     flex-direction: column;
 }
 
+.header__form{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    margin: 30px 0px;
+    justify-content: flex-end;}
+
 /* Empieza botones */
 
 .btn{
@@ -197,6 +228,10 @@ html{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.btn:hover{
+    color: rgb(202, 19, 187, 0.63);
+    transform: translate(-20px, 10px);
+}
 
 .btn__form{
     background-color: pink;
@@ -206,8 +241,7 @@ html{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.btn:hover{
-    color: rgb(202, 19, 187, 0.63);
+.btn__form:hover{
     transform: translate(-20px, 10px);
 }
 
@@ -292,6 +326,11 @@ html{
     text-decoration: none;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
 .grid{
     display: grid;
     align-items: center;
@@ -327,6 +366,12 @@ html{
         "footer";
     }
 
+    .body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     .main__img--md{
         display: flex;
         width: 90%;
@@ -334,9 +379,6 @@ html{
         padding: 10px;
     }
 
-    .video{
-        display: none;
-    }
     /* termina index */
 
     /* empieza nosotros */
@@ -423,10 +465,6 @@ html{
         display: none;
     }
 
-    .main__article{
-        display: flex;
-    }
-
     .main__article2{
         display: flex;
         flex-direction: column;
@@ -434,9 +472,27 @@ html{
     }
 }
 
+@media (min-width:768px){
+    .body{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
+        height: 100%; 
+    }
+}
+
+
+
 @media (min-width:900px){
     /* empieza index */
     
+    .body{
+        display: flex;
+        margin: 20px 30px;
+        height: 70vh;
+        flex-direction: row-reverse;
+    }
+
     .grid{
         grid-template-columns: auto;
         grid-template-rows: 11vh 70vh 19vh;
@@ -452,12 +508,6 @@ html{
         padding: 10px;
     }
     
-    .video{
-        display: flex;
-        width: 33vw;
-        height: 67vh;
-    }
-
     /* termina index */
 
     /* Empieza nosotros */
