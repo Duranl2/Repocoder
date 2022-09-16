@@ -1,0 +1,20 @@
+//fonts google
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Roboto:wght@300;400&display=swap');
+$mainFont:'Roboto', sans-serif;
+$secundaryFont:'Montserrat', sans-serif;
+
+//sizings
+$textSm:2em;
+$textMd:3em;
+$textLg:5em;
+
+//font
+$textBold:600;
+$textRegular:400;
+$textThin:200;
+
+
+
+.text-center{
+    text-align: center;
+}
