@@ -4,17 +4,22 @@ $mainFont:'Roboto', sans-serif;
 $secundaryFont:'Montserrat', sans-serif;
 
 //sizings
-$textSm:2em;
-$textMd:3em;
-$textLg:5em;
+$textSsm:1rem;
+$textSm:2rem;
+$textMd:3rem;
+$textLg:5rem;
 
 //font
 $textBold:600;
 $textRegular:400;
 $textThin:200;
 
-
-
 .text-center{
     text-align: center;
 }
+
+.font-bg{
+    font-size: $textLg;
+    text-decoration: none;
+}
+

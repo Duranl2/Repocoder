@@ -1,0 +1,245 @@
+//mobile
+// empieza index
+.grid{
+    @include media (mobile);
+    @include grid   (1, auto, 0);
+}
+
+.body{
+    @include media (mobile);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main__img--md{
+    @include media (mobile);
+    display: flex;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+}
+//termina index
+
+//empieza nosotros
+.main__article{
+    @include media (mobile);
+    @include flex (column, center, center);
+    margin: 15px;
+    padding: 15px;
+    font-size: $textSm;
+}
+
+.main__div{
+    @include flex2 (column, center);
+}
+.main__div2{
+    @include flex2 (column, center);
+}
+//termina nosotros
+
+//empieza animaciones y shows
+.main__card{
+    @include media (mobile);
+    @include flex3 (column, space-around);
+    flex: 0 1 calc(50% - 1em);
+}
+
+.main__cardimg--md{
+    @include media (mobile);
+    align-items: center;
+}
+.main__cardtittle{
+    @include media (mobile);
+    @include flex3 (row-reverse, center);
+    width: 10vw;
+    font-size: $textMd;
+}
+.main__img--fluid{
+    @include media (mobile);
+    width: 50%;
+}
+//termina animaciones y shows
+
+//Empieza galeria
+.galeria{
+    @include media (mobile);
+    width: 98vw;
+    margin: auto;
+    @include grid (2, auto, 5px);
+}
+
+.section__img{
+    @include media (mobile);
+    width: 100%;
+}
+
+.article{
+    @include media (mobile);
+    display: flex;
+    justify-content: center;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+//termina galeria
+
+//empieza contactanos
+.section__div{
+    @include media (mobile);
+    display: none;
+}
+
+.main__article2{
+    @include media (mobile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//termina contactanos
+
+//termina mobile
+
+//tablet
+
+//empieza index
+
+.body{
+    @include media (tablet);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    height: 100%;
+}
+
+//termina index
+
+//termina tablet
+
+//desktop
+
+//empieza index
+
+.body{
+    @include media (desktop);
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 30px;
+    height: 70vh;
+    
+}
+
+.grid{
+    @include media (desktop);
+    @include grid (4,11vh 70vh 19vh,0); 
+}
+
+.main__img--md{
+    @include media (desktop);
+    display: none;
+    width: 30vw;
+    padding: 10px;
+}
+
+//termina index
+
+//empieza nosotros
+.main__article{
+    @include media (desktop);
+    @include flex (column, center, center);
+    margin: 15px;
+    padding: 15px;
+    font-size: $textSm;
+}
+
+.main__div{
+    @include media (desktop);
+    @include flex2 (row, center);
+}
+.main__div2{
+    @include media (desktop);
+    @include flex2 (row-reverse, center);
+}
+//Termina nosotros
+
+// empieza animaciones y shows
+.main_card{
+    @include media (desktop);
+    @include flex3 (row, space-around);
+    flex: 0 1 calc(50% - 1em);
+}
+
+.main__cardtittle{
+    @include media (desktop);
+    @include flex3 (row-reverse, center);
+    width: 27vw;
+    font-size: $textMd;
+}
+.main__img--fluid{
+    @include media (desktop);
+    width: 100%;
+}
+//termina animaciones y shows
+
+//empieza galeria
+.galeria{
+    @include media (desktop);
+    @include grid (4, auto, 55px);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    margin: auto;
+}
+
+.Section__img{
+    @include media (desktop);
+    width: 20vw;
+}
+
+.article{
+    @include media (desktop);
+    display: flex;
+    justify-content: center;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+//termina galeria
+
+//empieza contactanos
+
+.section__div{
+    @include media (desktop);
+    @include flex (row, space-around, center);
+    width: 98vw;
+    height: 57vh;
+}
+
+.main__article2{
+    @include media (desktop);
+    display: none;
+}
+
+//termina contactanos
+
+//termina desktop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

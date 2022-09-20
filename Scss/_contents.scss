@@ -1,0 +1,173 @@
+.main{
+    @include flex (column, center, center);
+    width: 100%;
+    color: $bDark;
+    font-size: $textSm;
+    line-height: $textMd;
+    font-weight: $textRegular;
+    &__tittle{
+        margin: 5px 20px 20px 20px;
+        padding: 20px;
+    }
+    &__texto--md{
+        @include flex3 (column, center);
+        width: 50%;
+        height: auto;
+        margin: 20px 30px 50px 20px;
+        padding: 20px;
+    }
+    &__subtexto-md{
+        width: 50%;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        display: block;
+        position: relative;
+        left: 22.2%;
+        font-weight: $textBold;
+    }
+    &__encabezado{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: $textMd;
+        line-height: $textSsm;
+        color: $tColor;
+    }
+    &__subtitulo{
+        display: inline-block;
+        width: 80%;
+        height: auto;
+        margin: 15px;
+        padding: 15px;
+        font-size: $textMd;
+    }
+    &__presentación{
+        font-size: $textSm;
+        color: $tColor;
+        height: 12vh;
+        padding: 20px;
+    }
+    &__img--center{
+        @include flex3 (row, center);
+    }
+    &__img--md{
+        width: 30vw;
+        padding: 10px;
+    }
+    &__img--bg{
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        margin: 15px;
+        padding: 20px;
+    }
+    &__view{
+        overflow: hidden
+    }
+    &__cardimg--md{
+        @include flex3 (column, space-between);
+        padding: 20px 0px;
+        flex: 0 1 calc(20% - $textSsm);
+    }
+    &__cardtext{
+        @extend .main__img--center;
+        margin: 20px;
+        padding: 30px;
+        font-size: $textSm;
+    }
+}
+
+.carousel{
+    width: 100%; 
+    height: auto;
+    margin: 0px 0px 10px 0px;
+}
+
+.body{
+    display: flex;
+    height: 70vh;
+}
+
+.header__titulo{
+    display: inline-block;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    font-size: $textLg;
+    text-decoration: underline;
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.header__form{
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+    width: 100%;
+    margin: 20px 0px;
+    font-size: $textSm
+}
+
+.container{
+    @include flex3 (row, center);
+    font-size: $textMd;
+    height: 100%;
+    color: $tColor;
+}
+
+.section__div{
+    @include flex (row, space-around, center);
+    width: 98vw;
+}
+
+.section__form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    
+}
+
+.text-border{
+    margin: 15px 30px;
+    padding: 10px;
+    border: 1px $keyColor outset;
+    font-size: $textSm;
+    color: $tColor;
+}
+
+.text-medium{
+    @include flex2 (row, center);
+    line-height: $textSsm;
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    width: 100vw;
+}
+
+.barra{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.centro{
+    grid-area: main;
+}
+
+.pie{
+    grid-area: footer;
+}
+
+.card-space{
+    padding: 5px;
+}

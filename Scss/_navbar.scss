@@ -6,28 +6,27 @@
     height: 100%;
     height: auto;
     background-color: $mainColor;
-    img{
+    &__img{
         margin: 5px;
     }
-    ul{
+    &__lista{
         list-style: none;
         display: inline-block;
         margin-left: 30px;
-        li{
-            display: inline-block;
-            margin-right: 10px;
-            a{
-                margin: 5px;
-                color: $white;
+    }
+    &__items{
+        display: inline-block;
+        margin-right: 10px;
+        &--color{
+            margin: 5px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            &:hover{
+                color: $keyColor;
                 text-decoration: none;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 2rem;
-                &:hover{
-                    color: rgba(202, 19, 187, 0.63);
-                    text-decoration: none;
-                }
             }
         }
     }
 }
-

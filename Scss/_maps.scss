@@ -1,0 +1,22 @@
+$color:(
+    'uno': rgb(252, 130, 151),
+    'dos': rgb(219, 106, 125),
+    'tres':rgb(170, 85, 99),
+    'cuatro':rgb(128, 64, 75),
+);
+
+.bg-name{
+    background-color: map-get($map: $color, $key:'uno');
+}
+
+.bg-email{
+    background-color: map-get($map: $color, $key: 'dos');
+}
+
+.bg-tel{
+    background-color: map-get($map: $color, $key: 'tres');
+}
+
+.bg-msj{
+    background-color: map-get($map: $color, $key: 'cuatro');
+}
