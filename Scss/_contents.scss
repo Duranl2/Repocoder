@@ -50,6 +50,7 @@
     }
     &__img--center{
         @include flex3 (row, center);
+        width: 100%;
     }
     &__img--md{
         width: 30vw;
@@ -78,6 +79,10 @@
     }
 }
 
+.img-tam{
+    width: 100%;
+}
+
 .carousel{
     width: 100%; 
     height: auto;
@@ -89,28 +94,32 @@
     height: 70vh;
 }
 
-.header__titulo{
-    display: inline-block;
-    align-items: center;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
-    font-size: $textLg;
-    text-decoration: underline;
-    &__img{
+.header{
+    width: 100%;
+    &__titulo{
+        display: inline-block;
+        align-items: center;
+        height: auto;
+        margin: 20px;
+        padding: 10px;
+        font-size: $textLg;
+        text-decoration: underline;
+        &__img{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__form{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        height: 5vh;
+        width: 100%;
+        margin: 20px 0px;
+        font-size: $textMd;
     }
 }
 
-.header__form{
-    display: flex;
-    justify-content: flex-end;
-    height: 5vh;
-    width: 100%;
-    margin: 20px 0px;
-    font-size: $textSm
-}
 
 .container{
     @include flex3 (row, center);

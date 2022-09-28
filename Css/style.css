@@ -61,6 +61,10 @@ html{
     background-attachment:inherit;
 }
 
+.header{
+    width: 100vw;
+}
+
 .carousel{
     width: 100%; 
     height: auto;
@@ -114,8 +118,12 @@ html{
     justify-content: center;
 }
 
-.bg-pink{
+.text-pink{
     color: pink;
+}
+
+.bg-pink{
+    background-color: hotpink;
 }
 
 .main__subtexto--md{
@@ -178,6 +186,11 @@ html{
     padding: 5px;
 }
 
+.card-font{
+    margin: 10px;
+    font-size: 2rem;
+}
+
 .main__cardimg--md{  
     padding: 20px 0px;
     display: flex;
@@ -193,6 +206,12 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.section__card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .section__div{
@@ -211,10 +230,13 @@ html{
 
 .header__form{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 5vh;
     width: 100%;
     margin: 30px 0px;
-    justify-content: flex-end;}
+    font-size: 3rem;
+}
 
 /* Empieza botones */
 
@@ -278,6 +300,25 @@ html{
 
 .btncenter-greeen:hover{
     color: rgba(0, 0, 0, 0.671);
+}
+
+.container-boton{
+    background-color: rgba(8, 245, 8, 0.815);
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 7px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+    
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 
@@ -406,7 +447,14 @@ html{
         flex-direction: column;
         align-items: center;
     }
-    
+
+    .main__img--center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+  
     /* Termina nosotros */
 
     /* empieza animaciones y shows */
@@ -481,6 +529,15 @@ html{
         margin: 20px 30px;
         height: 100%; 
     }
+
+    /* empieza nosotros */
+    .main__img--center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    /* termina nosotros */
 }
 
 
@@ -534,6 +591,13 @@ html{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+    }
+
+    .main__img--center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
     }
     
     /* Termina nosotros */
