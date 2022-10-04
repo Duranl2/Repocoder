@@ -142,6 +142,7 @@ html{
     display: flex;
     line-height: 1em;
     justify-content: center;
+    color: rgb(255, 220, 220);
 }
 
 
@@ -157,6 +158,7 @@ html{
 .main__presentación{
     height: 12vh;
     padding: 20px;
+    color: rgb(255, 220, 220);
 }
 
 .main__img--center{
@@ -243,24 +245,26 @@ html{
 /* Empieza botones */
 
 
-.btn{
+.button{
     background-color: pink;
     border: none;
     color: white;
     padding: 15px;
+    border-radius: 10px;
     font-size: 24px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.btn:hover{
-    color: rgb(202, 19, 187, 0.63);
-    transform: translate(-20px, 10px);
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .btn__form{
     background-color: pink;
     border: none;
     padding: 5px;
+    border-radius: 10px;
     margin: 10px 0px 0px 0px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -274,7 +278,8 @@ html{
     border: none;
     color: white;
     margin: 50px;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 10px;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -292,7 +297,7 @@ html{
     border: none;
     color: white;
     margin: 50px;
-    padding: 20px;
+    padding: 15px;
     border-radius:50px;
     font-size: 24px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
