@@ -263,6 +263,7 @@ html{
 .btn__form{
     background-color: pink;
     border: none;
+    color: white;
     padding: 5px;
     border-radius: 10px;
     margin: 10px 0px 0px 0px;
@@ -333,7 +334,7 @@ html{
 
 .footer{
     display: flex;
-    width: 95vw;
+    width: 90vw;
     margin: 40px 0px 0px 20px;
     flex-direction: row;
 }
@@ -354,10 +355,15 @@ html{
     text-align: center;
 }
 
+.text-color{
+    color: rgb(255, 220, 220);
+}
+
 .text-border{
     margin: 15px 30px;
     padding: 10px;
     border: 1px rgba(170, 13, 170, 0.63) outset;
+    color: rgb(255, 220, 220);
 }
 
 .text-medium{
@@ -377,6 +383,10 @@ html{
 .container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    font-size: 5rem;
+    height: 100%;
+    color: rgb(255, 220, 220);
 }
 
 .grid{
