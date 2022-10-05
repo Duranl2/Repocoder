@@ -126,6 +126,20 @@ html{
     background-color: hotpink;
 }
 
+.error404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(134, 217, 250);
+}
+
+.img-error{
+    width: 100%;
+    height: auto;
+}
+
 .main__subtexto--md{
     width: 50%;
     height: auto;
@@ -258,6 +272,14 @@ html{
 .button:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+.btn-error{
+    margin: 20px;
+    padding: 10px;
+    font-size: 3rem;
+    border: none;
+    background: white;
 }
 
 .btn__form{

@@ -43,6 +43,14 @@
     }
 }
 
+.btn-error{
+    margin: 20px;
+    padding: 10px;
+    font-size: $textMd;
+    border: none;
+    background-color: $white;
+}
+
 .btn__form{
     background-color: $secundaryColor;
     border: none;
